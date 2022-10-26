@@ -13,3 +13,6 @@ def catch_all(path="/"):
     if netloc+".html" in os.listdir(app.template_folder):
         return flask.render_template(netloc+".html", path=flask.request.url, netloc=netloc), 410
     return flask.render_template('wb_machine.html', path=flask.request.url, netloc=netloc), 410
+
+if __name__ == "__main__":
+    app.run(debug=True)
