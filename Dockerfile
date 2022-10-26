@@ -9,4 +9,4 @@ RUN pip3 install -r requirements.txt
 
 COPY . .
 
-CMD [ "gunicorn", "-b" , "0.0.0.0:5012", "--workers=4", "--log-level", "DEBUG", "--reload"]
+CMD [ "gunicorn", "-b" , "0.0.0.0:5012", "--workers=4", "app:app", "--log-level", "DEBUG", "--reload"]
