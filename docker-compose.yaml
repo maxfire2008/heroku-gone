@@ -1,0 +1,8 @@
+version: '3.3'
+services:
+    heroku-gone:
+        ports:
+            - '3000:3012'
+        restart: always
+        image: heroku-gone
+        build: https://github.com/maxfire2008/heroku-gone.git
