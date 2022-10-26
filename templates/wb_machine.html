@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block body %}
+    <h1>
+        <a href="https://web.archive.org/web/{% block date %}2{% endblock %}/{{ path }}">
+            Visit the archived version of this site on the Wayback
+            Machine. It may not work.
+        </a>
+        <small>Please note that the Wayback Machine can be slow at times.</small>
+    </h1>
+{% endblock %}

@@ -1,12 +1,12 @@
 {% extends "base.html" %}
-{% block wb_machine %}
-{% endblock wb_machine %}
-<p>
-    Funny story:
-    <a href="https://help.heroku.com/RSBRUH58/removal-of-heroku-free-product-plans-faq">
-        Heroku is yanking it's free tiers
-    </a>
-</p>
-{% block message %}{% endblock %}
-{% block wb_machine_2 %}
-{% endblock wb_machine_2 %}
+{% block body %}
+    {% block wb_machine %}{% endblock %}
+    <p>
+        Funny story:
+        <a href="https://help.heroku.com/RSBRUH58/removal-of-heroku-free-product-plans-faq">
+            Heroku is yanking it's free tiers
+        </a>
+    </p>
+    {% block message %}{% endblock %}
+    {% block wb_machine_2 %}{% endblock %}
+{% endblock %}

@@ -1,17 +1,19 @@
 {% extends "heroku.html" %}
 {% block wb_machine %}
     <h1>
-        <a href="https://web.archive.org/web/{% block date %}2{% endblock %}/{{ path }}">
-            Visit the archived version of this site on the Wayback
+        <a href="https://web.archive.org/web/2/{{ path }}">
+            Visit the archived version of this page on the Wayback
             Machine
         </a>
+        <small>Please note that the Wayback Machine can be slow at times.</small>
     </h1>
 {% endblock wb_machine %}
 {% block wb_machine_2 %}
     <h1>
-        <a href="https://web.archive.org/web/{% block date %}2{% endblock %}/{{ path }}">
-            Visit the archived version of this site on the Wayback
+        <a href="https://web.archive.org/web/2/{{ path }}">
+            Visit the archived version of this page on the Wayback
             Machine
         </a>
+        <small>Please note that the Wayback Machine can be slow at times.</small>
     </h1>
 {% endblock wb_machine_2 %}
