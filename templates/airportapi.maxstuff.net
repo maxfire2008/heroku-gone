@@ -1,0 +1,6 @@
+{% extends "heroku_wb_machine.html" %}
+{% block message %}
+    This site was dead well before the goodbye of Heroku. Check out
+    <a href="https://github.com/maxfire2008/airportapimaxstuffnet">maxfire2008/airportapimaxstuffnet</a>
+    on GitHub
+{% endblock %}
