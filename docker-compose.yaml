@@ -2,7 +2,7 @@ version: '3.3'
 services:
     heroku-gone:
         ports:
-            - '5000:5012'
+            - '5012:5012'
         restart: always
         image: heroku-gone
         build:
